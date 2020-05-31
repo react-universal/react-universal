@@ -4,6 +4,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../styles/pages/home.css"
 import Hero from "../components/Home/Hero.js"
+import Divider from "../components/Divider"
+import SystemOfComponents from "../components/Home/SystemOfComponents"
 
 const IndexPage = () => (
   <Fragment>
@@ -11,6 +13,9 @@ const IndexPage = () => (
       <Layout>
         <SEO title="Home" />
         <Hero />
+        <Divider />
+        <SystemOfComponents />
+        <Divider />
       </Layout>
     </div>
   </Fragment>

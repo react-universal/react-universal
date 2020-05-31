@@ -1,0 +1,89 @@
+.SystemOfComponents {
+  padding-left: var(--landing-padding);
+  padding-right: var(--landing-padding);
+  padding: var(--landing-padding);
+  position: relative;
+}
+.SystemOfComponents__title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.SystemOfComponents__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.SystemOfComponents__circle {
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  border: 1px dashed black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SystemOfComponents__hover {
+  opacity: 0;
+  position: absolute;
+  animation: 0.6s ease fade;
+  transition: 600ms ease all;
+}
+
+.SystemOfComponents__circle:hover .SystemOfComponents__hover {
+  opacity: 1;
+}
+.SystemOfComponents__circle:hover .SystemOfComponents__circle__title {
+  opacity: 0;
+}
+
+.SystemOfComponents__circle__title {
+  margin: 0px;
+  transition: 600ms ease all;
+}
+
+.SystemOfComponents__connector {
+  height: 1px;
+  width: 200px;
+}
+
+.SOC__primitives {
+  height: 200px;
+  width: 200px;
+  position: relative;
+}
+.SOC__primitives span:nth-child(1) {
+  position: absolute;
+  top: 20px;
+  left: 74px;
+}
+
+.SOC__primitives span:nth-child(2) {
+  position: absolute;
+  top: 88px;
+  left: 12px;
+}
+
+.SOC__primitives span:nth-child(3) {
+  position: absolute;
+  top: 88px;
+  right: 12px;
+}
+
+.SOC__primitives span:nth-child(4) {
+  position: absolute;
+  top: 155px;
+  left: 75px;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
