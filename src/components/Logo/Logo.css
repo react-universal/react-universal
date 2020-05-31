@@ -1,0 +1,26 @@
+.Logo__link {
+  text-decoration: none;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.Logo__img {
+  height: 24px;
+  margin: 0;
+}
+
+.Logo__text {
+  margin-left: 10px;
+  font-family: "Orbitron";
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: bold;
+  height: 24px;
+}
+
+.Logo__universal {
+  color: #145598;
+  margin-left: 4px;
+}
