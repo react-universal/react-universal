@@ -6,18 +6,20 @@ import SOCAnimatedConnector from "./SOCAnimatedConnector"
 function SystemOfComponents() {
   return (
     <div className="SystemOfComponents">
-      <h2 className="SystemOfComponents__title">System Of Components</h2>
+      <h2 className="SystemOfComponents__title">Hierarchy Of Components</h2>
       <div className="SystemOfComponents__row">
         <SOCCircle
           title={"Primitives"}
           hover={
             <div className="SOC__primitives">
-              <span>Forces</span>
+              <div className="SOC__primitives__top">Forces</div>
 
-              <span>Matter</span>
-              <span>Particles</span>
+              <div className="SOC__primitives__middle">
+                <span>Matter</span>
+                <span>Particles</span>
+              </div>
 
-              <span>Space</span>
+              <div className="SOC__primitives__bottom">Space</div>
             </div>
           }
         />
@@ -25,13 +27,15 @@ function SystemOfComponents() {
         <SOCCircle
           title={"Atomic Design"}
           hover={
-            <div className="SOC__primitives">
-              <span>Atoms</span>
+            <div className="SOC__primitives SOC__primitives--atomic">
+              <div className="SOC__primitives__top">Atoms</div>
 
-              <span>Molecules</span>
-              <span>Organisms</span>
+              <div className="SOC__primitives__middle">
+                <span>Molecules</span>
+                <span>Organisms</span>
+              </div>
 
-              <span>Components</span>
+              <div className="SOC__primitives__bottom">Components</div>
             </div>
           }
         />
@@ -39,13 +43,15 @@ function SystemOfComponents() {
         <SOCCircle
           title={"Headless API"}
           hover={
-            <div className="SOC__primitives">
-              <span>TextField</span>
+            <div className="SOC__primitives SOC__primitives--headless">
+              <div className="SOC__primitives__top">TextField</div>
 
-              <span>Button</span>
-              <span>Dropdown</span>
+              <div className="SOC__primitives__middle">
+                <span>Button</span>
+                <span>Dropdown</span>
+              </div>
 
-              <span>Table</span>
+              <div className="SOC__primitives__bottom">Table</div>
             </div>
           }
         />
@@ -53,13 +59,15 @@ function SystemOfComponents() {
         <SOCCircle
           title={"UI Libraries"}
           hover={
-            <div className="SOC__primitives">
-              <span>{`<\TextField\>`}</span>
+            <div className="SOC__primitives SOC__primitives--ui">
+              <div className="SOC__primitives__top">{`<\TextField\>`}</div>
 
-              <span>{`<\Button\>`}</span>
-              <span>{`<\Dropdown\>`}</span>
+              <div className="SOC__primitives__middle">
+                <span className="SOC__primitives__small">{`<\Button\>`}</span>
+                <span className="SOC__primitives__smallest">{`<\Dropdown\>`}</span>
+              </div>
 
-              <span>{`<\Table\>`}</span>
+              <div className="SOC__primitives__bottom">{`<\Table\>`}</div>
             </div>
           }
         />
