@@ -8,6 +8,7 @@ import Divider from "../components/Divider"
 import SystemOfComponents from "../components/Home/SystemOfComponents"
 import CrossPlatform from "../components/Home/CrossPlatform"
 import Footer from "../components/Home/Footer"
+import IndependentlyInstalled from "../components/Home/IndependentlyInstalled"
 
 const IndexPage = () => (
   <Fragment>
@@ -19,6 +20,8 @@ const IndexPage = () => (
         <SystemOfComponents />
         <Divider />
         <CrossPlatform />
+        <Divider />
+        <IndependentlyInstalled />
         <Divider />
         <Footer />
       </Layout>

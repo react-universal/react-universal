@@ -1,7 +1,7 @@
 import React, { Fragment } from "react"
 import "./SystemOfComponents.css"
 import SOCCircle from "./SOCCircle"
-import SOCAnimatedConnector from "./SOCAnimatedConnector"
+import Arrow from "./Arrow"
 
 function SystemOfComponents() {
   return (
@@ -23,7 +23,7 @@ function SystemOfComponents() {
             </div>
           }
         />
-        <SOCAnimatedConnector />
+        <Arrow />
         <SOCCircle
           title={"Atomic Design"}
           hover={
@@ -39,7 +39,7 @@ function SystemOfComponents() {
             </div>
           }
         />
-        <SOCAnimatedConnector />
+        <Arrow />
         <SOCCircle
           title={"Headless API"}
           hover={
@@ -55,7 +55,7 @@ function SystemOfComponents() {
             </div>
           }
         />
-        <SOCAnimatedConnector />
+        <Arrow />
         <SOCCircle
           title={"UI Libraries"}
           hover={

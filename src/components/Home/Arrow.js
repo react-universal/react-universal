@@ -1,6 +1,6 @@
 import React from "react"
 
-function SOCAnimatedConnector() {
+function Arrow({ className }) {
   return (
     <svg
       x="0px"
@@ -8,6 +8,7 @@ function SOCAnimatedConnector() {
       viewBox="0 0 31.49 31.49"
       //   style="enable-background:new 0 0 31.49 31.49;"
       style={{ enableBackground: "0 0 31 31", height: 50 }}
+      className={className}
     >
       <path
         style={{ fill: "#1E201D" }}
@@ -19,4 +20,4 @@ function SOCAnimatedConnector() {
   )
 }
 
-export default SOCAnimatedConnector
+export default Arrow
