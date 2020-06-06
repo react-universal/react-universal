@@ -35,3 +35,8 @@
   color: #6a9ebf;
   color: #145598;
 }
+
+.Header svg {
+  width: 100%;
+  height: 100%;
+}
