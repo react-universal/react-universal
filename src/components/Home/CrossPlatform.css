@@ -1,0 +1,35 @@
+.CrossPlatform {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: var(--landing-padding);
+}
+
+.CrossPlatform__text {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+
+.CrossPlatform__text h3 {
+  font-weight: bold;
+  font-family: Lato, sans-serif;
+}
+
+.CrossPlatform__text p {
+  width: 400px;
+}
+
+.CrossPlatform__media {
+  height: 400px;
+  width: 400px;
+}
+
+.CrossPlatform__circle {
+  fill: white !important;
+}
+
+.CrossPlatform__circle:hover {
+  fill: #ddd !important;
+}

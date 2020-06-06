@@ -6,6 +6,7 @@ import "../styles/pages/home.css"
 import Hero from "../components/Home/Hero.js"
 import Divider from "../components/Divider"
 import SystemOfComponents from "../components/Home/SystemOfComponents"
+import CrossPlatform from "../components/Home/CrossPlatform"
 
 const IndexPage = () => (
   <Fragment>
@@ -15,6 +16,8 @@ const IndexPage = () => (
         <Hero />
         <Divider />
         <SystemOfComponents />
+        <Divider />
+        <CrossPlatform />
         <Divider />
       </Layout>
     </div>

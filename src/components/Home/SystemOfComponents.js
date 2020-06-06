@@ -1,4 +1,4 @@
-import React, { Fragment } from "React"
+import React, { Fragment } from "react"
 import "./SystemOfComponents.css"
 import SOCCircle from "./SOCCircle"
 import SOCAnimatedConnector from "./SOCAnimatedConnector"
