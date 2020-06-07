@@ -21,7 +21,8 @@
   width: 400px;
 }
 
-.CrossPlatform__media {
+.CrossPlatform__media,
+.CrossPlatform__media svg {
   height: 400px;
   width: 400px;
 }
@@ -32,4 +33,37 @@
 
 .CrossPlatform__circle:hover {
   fill: #ddd !important;
+}
+
+@media (max-width: 900px) {
+  .CrossPlatform {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    flex-direction: column;
+  }
+
+  .CrossPlatform__media,
+  .CrossPlatform__media svg {
+    height: 300px;
+    width: 300px;
+  }
+  .CrossPlatform__text p {
+    width: 100%;
+    max-width: 500px;
+  }
+  .CrossPlatform__text h3 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .CrossPlatform {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .CrossPlatform__media,
+  .CrossPlatform__media svg {
+    height: 250px;
+    width: 250px;
+  }
 }

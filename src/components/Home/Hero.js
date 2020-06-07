@@ -4,7 +4,7 @@ function Hero() {
   return (
     <div className="Home__hero">
       <div className="Home__content">
-        <div>
+        <div className="Home__innerContent">
           <h1 className="Home__title">UI That Scales</h1>
           <p className="Home__subtitle">
             Ecosystem of <strong>libraries</strong>, <strong>components</strong>

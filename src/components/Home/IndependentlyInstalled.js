@@ -12,9 +12,9 @@ function IndependentlyInstalled() {
       <div className="IndependentInstalled__media">
         <div className="IndependentInstalled__row">
           <h4>Library</h4>
-          <div>
+          <pre>
             <code>{`import { Touchable, Grid, Row, Circle} from ‘@reactuniversal/primitives’;`}</code>
-          </div>
+          </pre>
         </div>
         <div className="IndependentInstalled__row ">
           <span></span>
@@ -25,10 +25,10 @@ function IndependentlyInstalled() {
 
         <div className="IndependentInstalled__row">
           <h4>Sub Libraries</h4>
-          <div>
+          <pre>
             <code>{`import { Grid, Row } from ‘@reactuniversal/space’;
 import { Circle } from ‘@reactuniversal/particles’;`}</code>
-          </div>
+          </pre>
         </div>
         <div className="IndependentInstalled__row ">
           <span></span>
@@ -37,11 +37,11 @@ import { Circle } from ‘@reactuniversal/particles’;`}</code>
           </div>
         </div>
         <div className="IndependentInstalled__row">
-          <h4>Indiviual Components</h4>
-          <div>
+          <h4>Individual Components</h4>
+          <pre>
             <code>{`import Row from ‘@reactuniversal/row’;
 import Circle from ‘@reactuniversal/circle’;`}</code>
-          </div>
+          </pre>
         </div>
       </div>
     </div>

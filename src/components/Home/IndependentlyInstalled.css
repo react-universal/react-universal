@@ -8,8 +8,8 @@
 }
 .IndependentlyInstalled code {
   font-size: 12px;
-  padding: 6px;
-  white-space: pre-wrap;
+  /* padding: 6px; */
+  /* white-space: pre-wrap; */
 }
 
 .IndependentlyInstalled code:before,
@@ -28,16 +28,18 @@ code:after {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
   max-width: 800px;
   margin: 0 auto;
 }
 
-.IndependentInstalled__row div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 550px;
+.IndependentInstalled__row pre {
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  margin: 0;
+  padding: 4px;
 }
 
 .IndependentlyInstalled__text {
@@ -63,4 +65,17 @@ code:after {
 .IndependentlyInstalled__arrow__container {
   display: flex;
   align-items: flex-end;
+}
+
+@media (max-width: 600px) {
+  .IndependentlyInstalled {
+    padding: 40px 20px;
+  }
+  .IndependentInstalled__row pre {
+    width: 100%;
+    overflow: auto;
+  }
+  .IndependentlyInstalled code {
+    width: 550px;
+  }
 }

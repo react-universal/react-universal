@@ -23,7 +23,7 @@ function SystemOfComponents() {
             </div>
           }
         />
-        <Arrow />
+        <Arrow className="SOC__arrow" />
         <SOCCircle
           title={"Atomic Design"}
           hover={
@@ -39,7 +39,7 @@ function SystemOfComponents() {
             </div>
           }
         />
-        <Arrow />
+        <Arrow className="SOC__arrow" />
         <SOCCircle
           title={"Headless API"}
           hover={
@@ -55,7 +55,7 @@ function SystemOfComponents() {
             </div>
           }
         />
-        <Arrow />
+        <Arrow className="SOC__arrow" />
         <SOCCircle
           title={"UI Libraries"}
           hover={

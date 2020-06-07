@@ -20,16 +20,35 @@
   border-radius: 100%;
   width: 200px;
   height: 200px;
+  min-width: 200px;
+  min-height: 200px;
   border: 1px dashed black;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .SystemOfComponents__hover {
   opacity: 0;
   position: absolute;
   transition: 600ms ease all;
+  width: 200px;
+  height: 200px;
+  min-width: 200px;
+  min-height: 200px;
+  top: 0px;
+  left: 0px;
+}
+.SystemOfComponents__hover > div {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  min-width: 200px;
+  min-height: 200px;
+  top: 0px;
+  left: 0px;
+  padding: 12px;
 }
 
 .SystemOfComponents__circle:hover .SystemOfComponents__hover {
@@ -58,18 +77,19 @@
 
 .SOC__primitives__top {
   text-align: center;
-  margin-top: 24px;
+  height: 26px;
 }
 .SOC__primitives__middle {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 50px;
-  padding: 0px 12px;
+  height: 26px;
 }
 .SOC__primitives__bottom {
   text-align: center;
   margin-top: 48px;
+  height: 26px;
 }
 .SOC__primitives__small {
   font-size: 14px;
@@ -77,4 +97,23 @@
 
 .SOC__primitives__smallest {
   font-size: 13px;
+}
+.SOC__arrow {
+  transition: 600ms all ease;
+}
+
+@media (max-width: 1090px) {
+  .SystemOfComponents__row {
+    flex-direction: column;
+  }
+  .SOC__arrow {
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .SystemOfComponents {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
