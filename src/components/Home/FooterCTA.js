@@ -1,5 +1,4 @@
 import React from "react"
-import "./FooterCTA.css"
 
 function FooterCTA() {
   return (

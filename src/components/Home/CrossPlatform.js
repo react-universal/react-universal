@@ -1,5 +1,5 @@
 import React from "react"
-import "./CrossPlatform.css"
+
 import CrossPlatformSVG from "./CrossPlatformSVG"
 
 function CrossPlatform() {

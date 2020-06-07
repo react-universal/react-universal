@@ -1,5 +1,5 @@
-import React, { Fragment } from "react"
-import "./SystemOfComponents.css"
+import React from "react"
+
 import SOCCircle from "./SOCCircle"
 import Arrow from "./Arrow"
 

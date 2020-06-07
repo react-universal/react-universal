@@ -8,3 +8,5 @@
 import "./src/styles/variables.css"
 import "./src/styles/global.css"
 import "./src/components/layout.css"
+
+import "./src/components/Home/index.css"

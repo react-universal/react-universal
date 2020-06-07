@@ -1,5 +1,5 @@
 import React from "react"
-import "./IndependentlyInstalled.css"
+
 import Arrow from "./Arrow"
 
 function IndependentlyInstalled() {
