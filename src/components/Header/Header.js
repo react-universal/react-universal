@@ -12,7 +12,7 @@ const Header = ({ siteTitle }) => (
       <Logo />
       <div className="Header__social">
         <SocialIcon
-          link={"https://twitter.com/codyapearce"}
+          link={"https://twitter.com/react_universal"}
           icon={<FaTwitter />}
           className={"Header__twitter"}
         />
