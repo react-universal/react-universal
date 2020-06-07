@@ -18,6 +18,7 @@ const CrossPlatform = loadable(() => import("../components/Home/CrossPlatform"))
 const IndependentlyInstalled = loadable(() =>
   import("../components/Home/IndependentlyInstalled")
 )
+const FooterCTA = loadable(() => import("../components/Home/FooterCTA"))
 const Footer = loadable(() => import("../components/Home/Footer"))
 
 const IndexPage = () => (
@@ -32,6 +33,8 @@ const IndexPage = () => (
         <CrossPlatform />
         <LazyDivider />
         <IndependentlyInstalled />
+        <LazyDivider />
+        <FooterCTA />
         <LazyDivider />
         <Footer />
       </Layout>
