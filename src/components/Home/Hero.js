@@ -12,6 +12,12 @@ function Hero() {
             , and <strong>tools</strong> for building consistent user interfaces
             with React on all platforms.
           </p>
+          <a
+            href="https://github.com/react-universal"
+            className="Home__btn--primary "
+          >
+            Github
+          </a>
         </div>
       </div>
       <div className="Home__graphics">

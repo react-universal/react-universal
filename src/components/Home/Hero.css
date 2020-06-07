@@ -8,6 +8,40 @@
   /* background: #f5f6f7; */
 }
 
+.Home__butons {
+  margin-top: 40px;
+}
+
+.Home__btn--primary {
+  background: #333;
+  color: white;
+  text-decoration: none;
+  padding: 12px 16px;
+  font-size: 14px;
+  text-transform: "uppercase";
+  font-weight: bold;
+  border-radius: 2px;
+  box-sizing: border-box;
+  width: 150px;
+  text-align: center;
+}
+
+.Home__btn--secondary {
+  border: 1px solid #145598;
+  color: #145598;
+  text-decoration: none;
+  padding: 12px 16px;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  font-weight: bold;
+  box-sizing: border-box;
+  width: 150px;
+  text-align: center;
+  font-family: Lato;
+  /* margin-left: 16px; */
+}
+
 .Home__title {
   font-family: Lato;
   letter-spacing: 1px;
