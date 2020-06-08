@@ -3,3 +3,7 @@
   text-align: center;
   padding: 16px 0px;
 }
+
+.Home__footer a {
+  text-decoration: none;
+}

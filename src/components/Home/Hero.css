@@ -1,7 +1,6 @@
 .Home__hero {
   padding-top: calc(var(--header-height) + 100px);
   padding-bottom: 160px;
-  /* padding-top: var(--header-height); */
   padding-left: 80px;
   padding-right: 80px;
   display: flex;
@@ -13,8 +12,8 @@
 }
 
 .Home__btn--primary {
-  background: #333;
-  color: white;
+  background: var(--btn-primary);
+  color: var(--btn-primary-text);
   text-decoration: none;
   padding: 12px 16px;
   font-size: 14px;
@@ -27,8 +26,8 @@
 }
 
 .Home__btn--secondary {
-  border: 1px solid #333;
-  color: #333;
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
   text-decoration: none;
   padding: 6px 8px;
   font-size: 14px;
@@ -79,7 +78,7 @@
 .Home__circle {
   height: 400px;
   width: 400px;
-  border: 2px dashed black;
+  border: 2px dashed var(--text-color);
   border-radius: 100%;
   animation: rotate 80s linear infinite;
   position: absolute;

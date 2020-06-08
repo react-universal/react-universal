@@ -3,7 +3,7 @@
   margin: 0;
   display: flex;
   align-items: center;
-  color: black;
+  color: var(--text-color);
 }
 
 .Logo__img {

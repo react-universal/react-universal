@@ -5,8 +5,8 @@
  */
 
 // You can delete this file if you're not using it
+import "./src/styles/reset.css"
 import "./src/styles/variables.css"
 import "./src/styles/global.css"
-import "./src/components/layout.css"
 
 import "./src/components/Home/index.css"

@@ -21,7 +21,15 @@ module.exports = {
         trackingId: "UA-72995758-7",
       },
     },
-
+    {
+      resolve: "gatsby-plugin-use-dark-mode",
+      options: {
+        classNameDark: "dark-mode",
+        classNameLight: "light-mode",
+        storageKey: "darkMode",
+        minify: true,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

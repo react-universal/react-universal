@@ -28,11 +28,17 @@
 }
 
 .CrossPlatform__circle {
-  fill: white !important;
+  fill: var(--body-bg) !important;
+}
+.CrossPlatform__circle + path {
+  fill: var(--text-color) !important;
 }
 
-.CrossPlatform__circle:hover {
-  fill: #ddd !important;
+.CrossPlatform__text {
+  fill: var(--text-color);
+}
+.CrossPlatform__arrow {
+  fill: var(--text-color);
 }
 
 @media (max-width: 900px) {

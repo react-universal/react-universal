@@ -1,4 +1,21 @@
 body {
   --header-height: 65px;
   --landing-padding: 80px;
+  --body-bg: white;
+  --text-color: black;
+  --header-divider: #f0f0f2;
+  --icon-color: #333;
+  --btn-primary: #333;
+  --btn-primary-text: white;
+  --code-bg: #f7f7f7;
+}
+
+body.dark-mode {
+  --body-bg: #141821;
+  --text-color: #e7ebef;
+  --header-divider: #2f2f31;
+  --icon-color: #f7f7f7;
+  --btn-primary: #f7f7f7;
+  --btn-primary-text: #333;
+  --code-bg: #0e1623;
 }

@@ -5,12 +5,14 @@ import { FaTwitter, FaGithub } from "react-icons/fa"
 import "./Header.css"
 import Logo from "../Logo/Logo"
 import SocialIcon from "../SocialIcon"
+import DarkModeToggle from "./DarkModeToggle"
 
 const Header = ({ siteTitle }) => (
   <header className={"Header"}>
     <div className={"Header__inner"}>
       <Logo />
       <div className="Header__social">
+        <DarkModeToggle />
         <SocialIcon
           link={"https://twitter.com/react_universal"}
           icon={<FaTwitter />}

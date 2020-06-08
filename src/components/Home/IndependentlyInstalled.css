@@ -8,8 +8,6 @@
 }
 .IndependentlyInstalled code {
   font-size: 12px;
-  /* padding: 6px; */
-  /* white-space: pre-wrap; */
 }
 
 .IndependentlyInstalled code:before,
@@ -40,6 +38,8 @@ code:after {
   word-wrap: normal;
   margin: 0;
   padding: 4px;
+  background: var(--code-bg);
+  color: var(--code-text);
 }
 
 .IndependentlyInstalled__text {
@@ -60,6 +60,7 @@ code:after {
   transform: rotate(90deg);
   height: 25px;
   width: 25px;
+  fill: var(--text-color);
 }
 
 .IndependentlyInstalled__arrow__container {
