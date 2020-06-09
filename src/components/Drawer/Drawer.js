@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 import "./Drawer.css"
 import DrawerLink from "./DrawerLink"
-// import SocialLinks from "../Header/SocialLinks"
+import SocialLinks from "../Header/SocialLinks"
 import useClickOutside from "../../utils/useClickOutside"
 
 export default function Drawer({ isOpen, onClose }) {
@@ -16,9 +16,9 @@ export default function Drawer({ isOpen, onClose }) {
         <DrawerLink to={`/`} title={"Home"} />
         <DrawerLink to={`/ui-library-template`} title={"Library Template"} />
       </div>
-      {/* <div className="Drawer__SocialLinks">
+      <div className="Drawer__SocialLinks">
         <SocialLinks />
-      </div> */}
+      </div>
     </div>
   )
 }

@@ -1,14 +1,13 @@
 import PropTypes from "prop-types"
 import React, { useState } from "react"
 
-import { FaTwitter, FaGithub } from "react-icons/fa"
 import "./Header.css"
 import Logo from "../Logo/Logo"
-import SocialIcon from "../SocialIcon"
 import DarkModeToggle from "./DarkModeToggle"
 import HeaderLink from "./HeaderLink"
 import MenuButton from "../Drawer/MenuButton"
 import Drawer from "../Drawer/Drawer"
+import SocialLinks from "./SocialLinks"
 
 const Header = ({ siteTitle }) => {
   const [isOpen, setisOpen] = useState(false)
@@ -37,15 +36,7 @@ const Header = ({ siteTitle }) => {
 
           <div className="Header__social">
             <DarkModeToggle />
-            <SocialIcon
-              link={"https://twitter.com/react_universal"}
-              icon={<FaTwitter />}
-              className={"Header__twitter"}
-            />
-            <SocialIcon
-              link={"https://github.com/react-universal"}
-              icon={<FaGithub />}
-            />
+            <SocialLinks />
             <MenuButton toggleisOpen={toggleisOpen} isOpen={isOpen} />
           </div>
         </div>
