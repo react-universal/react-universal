@@ -32,7 +32,7 @@
   transition: 300ms ease all;
 }
 .socialIcon:hover {
-  color: #145598;
+  color: var(--primary);
 }
 
 .DarkModeToggleButton {
@@ -47,15 +47,57 @@
 
 .DarkModeToggleButton:hover {
   cursor: pointer;
-  color: #145598;
+  color: var(--primary);
 }
 
-@media (max-width: 320px) {
+.Header__left {
+  display: flex;
+  align-items: center;
+}
+
+.Header__links {
+  margin-left: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.HeaderLink {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  text-decoration: none;
+  height: 64px;
+  color: var(--text-color);
+  font-family: "Lato";
+  padding: 0px 8px;
+}
+
+.HeaderLink:hover {
+  border-bottom: 1px solid var(--primary);
+  background: var(--header-hover);
+}
+
+@media (max-width: 767px) {
   .Header {
-    height: auto;
-    padding-bottom: 8px;
+    position: fixed;
+    background-color: var(--body-bg);
   }
+  .Header__links {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .Header__social .socialIcon {
+    display: none;
+  }
+  .DarkModeToggleButton {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 350px) {
   .Header__inner {
-    flex-direction: column;
+    padding: 16px 8px;
   }
 }

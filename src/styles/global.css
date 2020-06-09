@@ -4,4 +4,9 @@
 body {
   background-color: var(--body-bg);
   color: var(--text-color);
+  transition: 500ms ease background, 500ms ease color;
+}
+
+.ContentWrapper {
+  padding-top: var(--header-height);
 }

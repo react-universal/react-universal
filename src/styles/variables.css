@@ -8,6 +8,9 @@ body {
   --btn-primary: #333;
   --btn-primary-text: white;
   --code-bg: #f7f7f7;
+  --header-hover: #f7f7f7;
+  --primary: #145598;
+  --drawer-bg: #fff;
 }
 
 body.dark-mode {
@@ -18,4 +21,6 @@ body.dark-mode {
   --btn-primary: #f7f7f7;
   --btn-primary-text: #333;
   --code-bg: #0e1623;
+  --header-hover: #1d2431;
+  --drawer-bg: #141821;
 }

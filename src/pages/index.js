@@ -22,24 +22,20 @@ const FooterCTA = loadable(() => import("../components/Home/FooterCTA"))
 const Footer = loadable(() => import("../components/Home/Footer"))
 
 const IndexPage = () => (
-  <Fragment>
-    <div className="home__background">
-      <Layout>
-        <SEO title="Home" />
-        <Hero />
-        <Divider />
-        <SystemOfComponents />
-        <LazyDivider />
-        <CrossPlatform />
-        <LazyDivider />
-        <IndependentlyInstalled />
-        <LazyDivider />
-        <FooterCTA />
-        <LazyDivider />
-        <Footer />
-      </Layout>
-    </div>
-  </Fragment>
+  <Layout>
+    <SEO title="Home" />
+    <Hero />
+    <Divider />
+    <SystemOfComponents />
+    <LazyDivider />
+    <CrossPlatform />
+    <LazyDivider />
+    <IndependentlyInstalled />
+    <LazyDivider />
+    <FooterCTA />
+    <LazyDivider />
+    <Footer />
+  </Layout>
 )
 
 export default IndexPage
