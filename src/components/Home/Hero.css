@@ -4,7 +4,6 @@
   padding-left: 80px;
   padding-right: 80px;
   display: flex;
-  /* background: #f5f6f7; */
 }
 
 .Home__butons {
@@ -39,7 +38,6 @@
   text-align: center;
   font-family: Lato;
   max-height: 40px;
-  /* margin-left: 16px; */
 }
 
 .Home__title {
