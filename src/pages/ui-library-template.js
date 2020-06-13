@@ -8,6 +8,8 @@ import Features from "../components/Repos/Features"
 import GetStarted from "../components/Repos/GetStarted"
 import Docs from "../components/Repos/Docs"
 import Structure from "../components/Repos/Structure"
+import Commands from "../components/Repos/Commands"
+import Command from "../components/Repos/Command"
 
 const IndexPage = () => (
   <Fragment>
@@ -184,22 +186,105 @@ Example.tsx`}
           <h4>packages</h4>
           <p>
             Folder contains all of the individual package folders (Button,
-            Utils, etc.
+            Utils, etc.)
           </p>
 
           <h4>packages/[Component]</h4>
           <p>
             Each seperated package has it's own <code>package.json</code>, and
-            the <code>lib</code>
-            folder.
+            the <code>lib</code> folder.
           </p>
 
           <h4>packages/[Component]/lib</h4>
           <p>
             Lib folder for each package contains the src files for that package
-            as well as the <code>.stories.</code> and <code>.test.</code>files.
+            as well as the <code>.stories.</code> and <code>.test.</code> files.
           </p>
         </Structure>
+        <Commands>
+          <Command
+            title={"npm run android"}
+            description={<span>Runs storybook on Android</span>}
+          />
+          <Command
+            title={"npm run ios"}
+            description={<span>Runs storybook on iOS</span>}
+          />
+          <Command
+            title={"npm run web"}
+            description={
+              <span>
+                Runs storybook on the web, also opens a tab at{" "}
+                <code>localhost:9000.</code>
+              </span>
+            }
+          />
+          <Command
+            title={"npm run deploy-docs"}
+            description={<span>Runs Builds and deploys storybook docs</span>}
+          />
+          <Command
+            title={"npm run build-storybook"}
+            description={
+              <span>
+                Builds the storybook web project into a bundle in the{" "}
+                <code>public</code> folder.
+              </span>
+            }
+          />
+          <Command
+            title={"npm run push-docs"}
+            description={
+              <span>
+                Deploys the contents of the public folder, which should be the
+                storybook web project.
+              </span>
+            }
+          />
+          <Command
+            title={"npm run see-npm-package"}
+            description={
+              <span>
+                This command shows the exact files that will be published if you
+                run the command <code>npm publish</code>. Useful for double
+                checking if you are including something you do not want to
+                include. If something does need to be ignored, you can ignore it
+                in the <code>.npmignore</code> file.
+              </span>
+            }
+          />
+          <Command
+            title={"npm run test"}
+            description={<span>Runs Jest tests</span>}
+          />
+          <Command
+            title={"npm run test:generate-output"}
+            description={
+              <span>
+                Generates <code>jest-test-results.json </code>which is used by
+                the jest addon in Storybook to show the latest test results for
+                that component.
+              </span>
+            }
+          />
+          <Command
+            title={"npm run test:loki"}
+            description={<span>Runs loki visual regression tests</span>}
+          />
+          <Command
+            title={"npm run test:loki-update"}
+            description={
+              <span>
+                Generates the initial reference images that will be diffed later
+                on.
+              </span>
+            }
+          />
+          <Command
+            title={"npm run lint"}
+            description={<span>Runs eslint</span>}
+          />
+        </Commands>
       </Container>
     </Layout>
   </Fragment>
