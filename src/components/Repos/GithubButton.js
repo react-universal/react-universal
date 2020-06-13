@@ -5,7 +5,7 @@ const GithubButton = ({ href }) => {
   if (!href) return null
   return (
     <div>
-      <a href={github} className="Home__btn--secondary">
+      <a href={href} className="Home__btn--secondary">
         Github
       </a>
     </div>
