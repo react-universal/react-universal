@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 const Features = ({ list }) => {
   return (
     <div>
-      <h3>Features</h3>
+      <h2>Features</h2>
       <ul style={styles.list}>
         {list.map((item, index) => (
           <li key={index} style={styles.item}>

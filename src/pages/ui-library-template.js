@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import PageHead from "../components/Repos/PageHead"
 import Container from "../components/Repos/Container"
 import Features from "../components/Repos/Features"
+import GetStarted from "../components/Repos/GetStarted"
 
 const IndexPage = () => (
   <Fragment>
@@ -32,9 +33,43 @@ const IndexPage = () => (
             "Git hooks with Husky",
           ]}
         />
+        <GetStarted>
+          <ol style={styles.list}>
+            <li>Click "Use this Template" and create a new repo</li>
+            <li>
+              Run <code>npm i</code> to install the dependencies
+            </li>
+            <li>
+              Start the storybook web environment: <code>npm run web</code>
+            </li>
+            <li>
+              Start a native storybook environment: <code>npm run ios</code> or{" "}
+              <code>npm run android</code>
+            </li>
+            <li>Start creating components</li>
+          </ol>
+          <p>Optional</p>
+          <ol style={styles.list}>
+            <li>
+              Update fields in Package.json to match your project (name, author,
+              version, etc)
+            </li>
+            <li>
+              Update <code>storybook/stories/Home.stories.tsx</code>text to
+              match the name of your project
+            </li>
+            <li>Update Readme for your project</li>
+          </ol>
+        </GetStarted>
       </Container>
     </Layout>
   </Fragment>
 )
+
+const styles = {
+  list: {
+    marginLeft: 16,
+  },
+}
 
 export default IndexPage
