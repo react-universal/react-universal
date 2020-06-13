@@ -6,6 +6,7 @@ import PageHead from "../components/Repos/PageHead"
 import Container from "../components/Repos/Container"
 import Features from "../components/Repos/Features"
 import GetStarted from "../components/Repos/GetStarted"
+import Docs from "../components/Repos/Docs"
 
 const IndexPage = () => (
   <Fragment>
@@ -61,6 +62,114 @@ const IndexPage = () => (
             <li>Update Readme for your project</li>
           </ol>
         </GetStarted>
+        <Docs>
+          <h4>Developing Components</h4>
+          <p>
+            Each component should have it's own folder under the{" "}
+            <code>packages</code>
+            folder, with it's own <code>package.json</code>. This allows you to
+            publish and make available each component seperately. Though you can
+            structure the packages and components however you want, but you'll
+            need to update the lerna configuration depending on your structure.
+          </p>
+          <p>
+            An example component is provided in <code>packages/example</code>.
+            The storybook config looks for stories that have this extension:{" "}
+            <code>stories.tsx.</code>. The tests look for stories with{" "}
+            <code>.test.tsx</code>
+            extension. Where you put these files doesn't really matter, but I
+            find putting them right next to the component makes it easier.
+          </p>
+          <pre>
+            <code>
+              {`// packages/example/lib 
+Example.stories.tsx 
+Example.test.tsx
+Example.tsx`}
+            </code>
+          </pre>
+          <p>
+            When I want to create a new component I usually use the{" "}
+            <code>lerna create [name]</code> commmand, but this is not
+            necessary, you can just create a new folder,{" "}
+            <code>package.json</code>, and the required component files.
+          </p>
+          <h4>Publishing Your Components</h4>
+          <p>
+            Lerna makes this incredibly easy, just run{" "}
+            <code>lerna publish </code>and all packages with updates will be
+            published. Lerna provides a lot of options here however, checkout
+            the{" "}
+            <a href="https://github.com/lerna/lerna/tree/master/commands/publish#readme">
+              docs on publishing{" "}
+            </a>
+            to learn more.
+          </p>
+          <h4>Publishing Your Storybook with Github Pages</h4>
+          <p>
+            You can publish the storybook web environment using the following
+            command:
+            <pre>
+              <code>npm run run deploy-docs</code>
+            </pre>
+            This will bundle the storybook web project, create a separate branch
+            gh, push the bundle to that branch, and make it available on github
+            pages at a url like this:
+            <pre>
+              <code>https://react-universal.github.io/[package] </code>
+            </pre>
+            For example, the template ui library storybook is published here:{" "}
+            <a href="https://react-universal.github.io/ui-library-template/">
+              https://react-universal.github.io/ui-library-template/
+            </a>
+          </p>
+          <h4>Independently Versioned Packages</h4>
+          <p>
+            The config for lerna is found in the <code>lerna.json</code> file at
+            the project root. Currently, version is set to independent, which
+            means that each package/component you add will be versioned
+            independently of each other. If you want all packages to share the
+            same version then change version to the semantic version you want,
+            for example,
+            <code>version: 1.1.3</code>. Check out the Lerna documentation to
+            learn more about configuring Lerna.
+          </p>
+          <h4>Visual Regression Tests</h4>
+          <p>
+            For visual regression tests, we need to generate a starting
+            reference image for how the component should look. We can do this
+            initially by running the <code>test:loki-update</code> command,
+            which will automatically create images for each story on chrome for
+            three different sizes: <code>1366</code>, <code>iPhone7</code>, and{" "}
+            <code>A4 paper</code>. You can customize Loki settings in the{" "}
+            <code>package.json</code>.
+          </p>
+
+          <p>
+            Once you have reference images, you can run the command{" "}
+            <code>test:loki</code> to run visual regression tests. If
+            differences are found, the current image will placed in
+            <code>.loki/current</code> and the difference image in{" "}
+            <code>.loki/difference</code>.
+          </p>
+          <h4>Stroybook style helper components</h4>
+          <p>
+            By default storybook adds the components directly in the top left
+            without any styles. However, usually it looks better (though not
+            always) to add some more spacing and title. Two helper components
+            are provided for this: <code>Container</code> and{" "}
+            <code>Header</code>.
+          </p>
+          <p>
+            Another problem with default storybook styling is that the storybook
+            environment (where the components actually are) is not wrapped in a{" "}
+            <code>ScrollView</code>, which in React Native means the screen will
+            not scroll if the content extends past the bottom. The
+            <code>Container</code> component, therefore, also wraps the
+            environment and allows you to scroll down on iOS and Android if your
+            components grow larger than the screen.
+          </p>
+        </Docs>
       </Container>
     </Layout>
   </Fragment>
