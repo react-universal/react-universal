@@ -1,13 +1,13 @@
 import React from "react"
 import PropTypes from "prop-types"
+import Section from "./Section"
 
 const GetStarted = ({ children, description }) => {
   return (
-    <div>
-      <h2>Get Started</h2>
+    <Section title={"Get Started"} id="get-started">
       {description ? <p>{description}</p> : null}
       {children}
-    </div>
+    </Section>
   )
 }
 

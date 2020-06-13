@@ -1,10 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
+import Section from "./Section"
 
 const Features = ({ list }) => {
   return (
-    <div>
-      <h2>Features</h2>
+    <Section title={"Features"} id="features">
       <ul style={styles.list}>
         {list.map((item, index) => (
           <li key={index} style={styles.item}>
@@ -12,7 +12,7 @@ const Features = ({ list }) => {
           </li>
         ))}
       </ul>
-    </div>
+    </Section>
   )
 }
 
