@@ -7,6 +7,7 @@ import Container from "../components/Repos/Container"
 import Features from "../components/Repos/Features"
 import GetStarted from "../components/Repos/GetStarted"
 import Docs from "../components/Repos/Docs"
+import Structure from "../components/Repos/Structure"
 
 const IndexPage = () => (
   <Fragment>
@@ -170,6 +171,35 @@ Example.tsx`}
             components grow larger than the screen.
           </p>
         </Docs>
+        <Structure>
+          <h4>storybook</h4>
+          <p>
+            Folder contains configuration for React Native storybook and
+            storybook in general.
+          </p>
+
+          <h4>.storybook</h4>
+          <p>Folder contains configuration for React Web storybook</p>
+
+          <h4>packages</h4>
+          <p>
+            Folder contains all of the individual package folders (Button,
+            Utils, etc.
+          </p>
+
+          <h4>packages/[Component]</h4>
+          <p>
+            Each seperated package has it's own <code>package.json</code>, and
+            the <code>lib</code>
+            folder.
+          </p>
+
+          <h4>packages/[Component]/lib</h4>
+          <p>
+            Lib folder for each package contains the src files for that package
+            as well as the <code>.stories.</code> and <code>.test.</code>files.
+          </p>
+        </Structure>
       </Container>
     </Layout>
   </Fragment>
