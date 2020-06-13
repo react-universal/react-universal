@@ -10,6 +10,7 @@ import Docs from "../components/Repos/Docs"
 import Structure from "../components/Repos/Structure"
 import Commands from "../components/Repos/Commands"
 import Command from "../components/Repos/Command"
+import Showcase from "../components/Repos/Showcase"
 
 const IndexPage = () => (
   <Fragment>
@@ -285,6 +286,18 @@ Example.tsx`}
             description={<span>Runs eslint</span>}
           />
         </Commands>
+        <Showcase>
+          <p>
+            All React Universal UI components use this template. For example:
+          </p>
+          <ul style={styles.list}>
+            <li>
+              <a href="https://github.com/react-universal/Button">
+                React Universal Button
+              </a>
+            </li>
+          </ul>
+        </Showcase>
       </Container>
     </Layout>
   </Fragment>
