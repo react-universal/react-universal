@@ -40,11 +40,13 @@ module.exports = {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
         alias: {
-          "@components": `${__dirname}/src/components`,
-          "@content": `${__dirname}/src/content`,
-          "@utils": `${__dirname}/src/utils`,
+          "@components": "src/components",
+          "@pages": "src/pages",
+          "@styles": "src/styles",
+          "@templates": "src/templates",
+          "@utils": "src/utils",
         },
-        extensions: [],
+        extensions: ["js", "css"],
       },
     },
 

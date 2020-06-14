@@ -1,17 +1,17 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { Fragment } from "react"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import PageHead from "../components/Repos/PageHead"
-import Container from "../components/Repos/Container"
-import Features from "../components/Repos/Features"
-import GetStarted from "../components/Repos/GetStarted"
-import Docs from "../components/Repos/Docs"
-import Structure from "../components/Repos/Structure"
-import Commands from "../components/Repos/Commands"
-import Command from "../components/Repos/Command"
-import Showcase from "../components/Repos/Showcase"
+import Layout from "@components/layout"
+import SEO from "@components/seo"
+import PageHead from "@components/Repos/PageHead"
+import Container from "@components/Repos/Container"
+import Features from "@components/Repos/Features"
+import GetStarted from "@components/Repos/GetStarted"
+import Docs from "@components/Repos/Docs"
+import Structure from "@components/Repos/Structure"
+import Commands from "@components/Repos/Commands"
+import Command from "@components/Repos/Command"
+import Showcase from "@components/Repos/Showcase"
 
 const IndexPage = () => (
   <Fragment>
