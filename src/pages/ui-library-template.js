@@ -37,8 +37,9 @@ const IndexPage = () => (
             "Eslint and Prettier Config",
             "Git hooks with Husky",
           ]}
+          href={"ui-library-template#features"}
         />
-        <GetStarted>
+        <GetStarted href={"ui-library-template#get-started"}>
           <ol style={styles.list}>
             <li>Click "Use this Template" and create a new repo</li>
             <li>
@@ -66,7 +67,7 @@ const IndexPage = () => (
             <li>Update Readme for your project</li>
           </ol>
         </GetStarted>
-        <Docs>
+        <Docs href={"ui-library-template#documentation"}>
           <h4>Developing Components</h4>
           <p>
             Each component should have it's own folder under the{" "}
@@ -174,7 +175,7 @@ Example.tsx`}
             components grow larger than the screen.
           </p>
         </Docs>
-        <Structure>
+        <Structure href={"ui-library-template#structure"}>
           <h4>storybook</h4>
           <p>
             Folder contains configuration for React Native storybook and
@@ -202,7 +203,7 @@ Example.tsx`}
             as well as the <code>.stories.</code> and <code>.test.</code> files.
           </p>
         </Structure>
-        <Commands>
+        <Commands href={"ui-library-template#commands"}>
           <Command
             title={"npm run android"}
             description={<span>Runs storybook on Android</span>}
@@ -286,7 +287,7 @@ Example.tsx`}
             description={<span>Runs eslint</span>}
           />
         </Commands>
-        <Showcase>
+        <Showcase href={"ui-library-template#showcase"}>
           <p>
             All React Universal UI components use this template. For example:
           </p>

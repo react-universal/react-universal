@@ -1,19 +1,19 @@
 import React from "react"
 import PropTypes from "prop-types"
+import "./Section.css"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
-function Section({ children, id, title }) {
+function Section({ children, id, title, href }) {
   return (
-    <section id={id} style={styles.container}>
-      <h2>{title}</h2>
+    <section id={id} className="Section">
+      <h2>
+        <AnchorLink to={href} title={title} className="Section__title">
+          <span className="Section__hash">#</span> {title}
+        </AnchorLink>
+      </h2>
       {children}
     </section>
   )
-}
-
-const styles = {
-  container: {
-    marginTop: 60,
-  },
 }
 
 Section.propTypes = {

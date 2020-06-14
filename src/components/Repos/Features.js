@@ -2,9 +2,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import Section from "./Section"
 
-const Features = ({ list }) => {
+const Features = ({ list, href }) => {
   return (
-    <Section title={"Features"} id="features">
+    <Section title={"Features"} id="features" href={href}>
       <ul style={styles.list}>
         {list.map((item, index) => (
           <li key={index} style={styles.item}>

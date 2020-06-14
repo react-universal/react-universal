@@ -2,9 +2,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import Section from "./Section"
 
-const Structure = ({ children }) => {
+const Structure = ({ children, href }) => {
   return (
-    <Section title={"Structure"} id="structure">
+    <Section title={"Structure"} id="structure" href={href}>
       {children}
     </Section>
   )
