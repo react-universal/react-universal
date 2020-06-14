@@ -11,14 +11,10 @@ const GetStarted = ({ children, description, href }) => {
   )
 }
 
-const styles = {
-  list: {
-    marginLeft: 16,
-  },
-}
-
 GetStarted.propTypes = {
   children: PropTypes.array,
+  href: PropTypes.string,
+  description: PropTypes.string,
 }
 
 export default GetStarted

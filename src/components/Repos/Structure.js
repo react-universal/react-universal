@@ -12,6 +12,7 @@ const Structure = ({ children, href }) => {
 
 Structure.propTypes = {
   children: PropTypes.array,
+  href: PropTypes.string,
 }
 
 export default Structure

@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 
 export default function SocialIcon({ link, icon, style, className }) {
   return (
@@ -8,4 +9,11 @@ export default function SocialIcon({ link, icon, style, className }) {
       })}
     </a>
   )
+}
+
+SocialIcon.propTypes = {
+  link: PropTypes.string,
+  icon: PropTypes.node,
+  style: PropTypes.array,
+  className: PropTypes.string,
 }

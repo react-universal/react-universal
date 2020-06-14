@@ -20,6 +20,7 @@ Section.propTypes = {
   children: PropTypes.node,
   id: PropTypes.string,
   title: PropTypes.string,
+  href: PropTypes.string,
 }
 
 export default Section

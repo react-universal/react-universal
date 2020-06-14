@@ -12,6 +12,7 @@ const Showcase = ({ children, href }) => {
 
 Showcase.propTypes = {
   children: PropTypes.array,
+  href: PropTypes.string,
 }
 
 export default Showcase

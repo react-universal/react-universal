@@ -60,14 +60,14 @@ function SystemOfComponents() {
           title={"UI Libraries"}
           hover={
             <div className="SOC__primitives SOC__primitives--ui">
-              <div className="SOC__primitives__top">{`<\TextField\>`}</div>
+              <div className="SOC__primitives__top">{`<TextField>`}</div>
 
               <div className="SOC__primitives__middle">
-                <span className="SOC__primitives__small">{`<\Button\>`}</span>
-                <span className="SOC__primitives__smallest">{`<\Dropdown\>`}</span>
+                <span className="SOC__primitives__small">{`<Button>`}</span>
+                <span className="SOC__primitives__smallest">{`<Dropdown>`}</span>
               </div>
 
-              <div className="SOC__primitives__bottom">{`<\Table\>`}</div>
+              <div className="SOC__primitives__bottom">{`<Table>`}</div>
             </div>
           }
         />

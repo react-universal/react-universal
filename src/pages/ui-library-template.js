@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React, { Fragment } from "react"
 
 import Layout from "../components/layout"
@@ -41,7 +42,7 @@ const IndexPage = () => (
         />
         <GetStarted href={"ui-library-template#get-started"}>
           <ol style={styles.list}>
-            <li>Click "Use this Template" and create a new repo</li>
+            <li>Click {"Use this Template"} and create a new repo</li>
             <li>
               Run <code>npm i</code> to install the dependencies
             </li>

@@ -37,6 +37,18 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          "@components": `${__dirname}/src/components`,
+          "@content": `${__dirname}/src/content`,
+          "@utils": `${__dirname}/src/utils`,
+        },
+        extensions: [],
+      },
+    },
+
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,

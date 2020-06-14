@@ -28,6 +28,7 @@ const styles = {
 
 Features.propTypes = {
   list: PropTypes.array,
+  href: PropTypes.string,
 }
 
 export default Features

@@ -12,6 +12,7 @@ const Commands = ({ children, href }) => {
 
 Commands.propTypes = {
   children: PropTypes.array,
+  href: PropTypes.string,
 }
 
 export default Commands

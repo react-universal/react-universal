@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 
 function SOCCircle({ title, hover }) {
   return (
@@ -7,6 +8,11 @@ function SOCCircle({ title, hover }) {
       <div className="SystemOfComponents__hover">{hover}</div>
     </div>
   )
+}
+
+SOCCircle.propTypes = {
+  title: PropTypes.string,
+  hover: PropTypes.string,
 }
 
 export default SOCCircle

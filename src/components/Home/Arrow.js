@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 
 function Arrow({ className }) {
   return (
@@ -17,6 +18,10 @@ function Arrow({ className }) {
       />
     </svg>
   )
+}
+
+Arrow.propTypes = {
+  className: PropTypes.string,
 }
 
 export default Arrow

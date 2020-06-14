@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
 function HeaderLink({ to, text }) {
@@ -7,6 +8,11 @@ function HeaderLink({ to, text }) {
       {text}
     </Link>
   )
+}
+
+HeaderLink.propTypes = {
+  to: PropTypes.string,
+  text: PropTypes.string,
 }
 
 export default HeaderLink

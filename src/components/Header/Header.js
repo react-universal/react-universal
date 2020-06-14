@@ -9,7 +9,7 @@ import MenuButton from "../Drawer/MenuButton"
 import Drawer from "../Drawer/Drawer"
 import SocialLinks from "./SocialLinks"
 
-const Header = ({ siteTitle }) => {
+const Header = () => {
   const [isOpen, setisOpen] = useState(false)
 
   function toggleisOpen() {
