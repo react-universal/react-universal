@@ -292,6 +292,15 @@ Example.tsx`}
           <p>
             All React Universal UI components use this template. For example:
           </p>
+          <p>Libraries</p>
+          <ul style={styles.list}>
+            <li>
+              <a href="https://github.com/react-universal/space">
+                React Universal Space
+              </a>
+            </li>
+          </ul>
+          <p>Components</p>
           <ul style={styles.list}>
             <li>
               <a href="https://github.com/react-universal/Button">
