@@ -61,7 +61,7 @@ const IndexPage = () => (
               version, etc)
             </li>
             <li>
-              Update <code>storybook/stories/Home.stories.tsx</code>text to
+              Update <code>storybook/stories/Home.stories.tsx</code> text to
               match the name of your project
             </li>
             <li>Update Readme for your project</li>
@@ -71,19 +71,19 @@ const IndexPage = () => (
           <h4>Developing Components</h4>
           <p>
             Each component should have it's own folder under the{" "}
-            <code>packages</code>
-            folder, with it's own <code>package.json</code>. This allows you to
-            publish and make available each component seperately. Though you can
-            structure the packages and components however you want, but you'll
-            need to update the lerna configuration depending on your structure.
+            <code>packages</code> folder, with it's own{" "}
+            <code>package.json</code>. This allows you to publish and make
+            available each component seperately. Though you can structure the
+            packages and components however you want, but you'll need to update
+            the lerna configuration depending on your structure.
           </p>
           <p>
             An example component is provided in <code>packages/example</code>.
             The storybook config looks for stories that have this extension:{" "}
             <code>stories.tsx.</code>. The tests look for stories with{" "}
-            <code>.test.tsx</code>
-            extension. Where you put these files doesn't really matter, but I
-            find putting them right next to the component makes it easier.
+            <code>.test.tsx</code> extension. Where you put these files doesn't
+            really matter, but I find putting them right next to the component
+            makes it easier.
           </p>
           <pre>
             <code>
@@ -102,7 +102,7 @@ Example.tsx`}
           <h4>Publishing Your Components</h4>
           <p>
             Lerna makes this incredibly easy, just run{" "}
-            <code>lerna publish </code>and all packages with updates will be
+            <code>lerna publish </code> and all packages with updates will be
             published. Lerna provides a lot of options here however, checkout
             the{" "}
             <a href="https://github.com/lerna/lerna/tree/master/commands/publish#readme">

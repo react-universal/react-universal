@@ -10,3 +10,8 @@ body {
 .ContentWrapper {
   padding-top: var(--header-height);
 }
+
+pre,
+code {
+  background: var(--code-bg);
+}

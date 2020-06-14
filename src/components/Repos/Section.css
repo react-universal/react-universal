@@ -4,7 +4,7 @@
 }
 
 .Section__title {
-  color: black;
+  color: var(--text-color);
   text-decoration: none;
 }
 
