@@ -33,7 +33,8 @@
   "devDependencies": {
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.20.1",
-    "prettier": "2.0.5"
+    "prettier": "2.0.5",
+    "husky": "^4.2.5"
   },
   "keywords": [
     "gatsby"
@@ -55,5 +56,11 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm test"
+    }
   }
 }
